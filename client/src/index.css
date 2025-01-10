@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Dropdown Visibility Fixes */
+.ant-select-dropdown,
+.ant-dropdown,
+[data-radix-popper-content-wrapper],
+.select-dropdown {
+  z-index: 9999 !important;
+  position: fixed !important;
+  background-color: white !important;
+  color: black !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+.ant-select-dropdown-menu,
+.ant-select-item-option {
+  color: black !important;
+  background-color: white !important;
+  padding: 8px 12px !important;
+}
+
+.ant-select-item-option-active,
+.ant-select-item-option-selected {
+  background-color: #f0f0f0 !important;
+  color: #000 !important;
+}
+
+/* Radix UI Select Dropdown */
+[data-radix-select-content] {
+  z-index: 9999 !important;
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Tailwind Select Dropdown */
+.select-dropdown {
+  z-index: 9999 !important;
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Ensure high z-index for all dropdowns */
+[data-popper-placement],
+[data-state="open"] {
+  z-index: 9999 !important;
+}
+
+/* Debugging styles */
+.ant-select-dropdown::before,
+[data-radix-select-content]::before {
+  /* content: 'Dropdown Debug' !important; */
+  display: block !important;
+  background-color: red !important;
+  color: white !important;
+  padding: 5px !important;
+}
+
+/* Leaflet Popup Styling - Aggressive Override */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-content,
+.leaflet-popup {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border: none !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  padding: 10px !important;
+}
+
+.leaflet-popup-tip {
+  background-color: white !important;
+  border-top-color: white !important;
+}
+
+/* Force color on all popup elements */
+.leaflet-popup *,
+.leaflet-popup-content *,
+.leaflet-popup-content-wrapper * {
+  color: black !important;
+  background-color: white !important;
+}

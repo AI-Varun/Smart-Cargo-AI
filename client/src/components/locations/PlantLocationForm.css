@@ -1,0 +1,37 @@
+/* Basic styles for the Plant Location Form */
+
+.plant-location-form {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plant-location-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.map-container {
+  height: 300px;
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.button-group .secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Add additional styles as needed */
